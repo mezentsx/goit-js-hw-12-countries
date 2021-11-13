@@ -79,13 +79,7 @@ body {
 }
 
 .notify {
-  background-image: repeating-linear-gradient(
-    -35deg,
-    rgb(187, 185, 185),
-    rgb(187, 185, 185) 40px,
-    rgb(139, 137, 137) 30px,
-    rgb(139, 137, 137) 80px
-  );
+  background-color: rgb(214, 210, 210);
   border-radius: 5px;
   min-width: 100px;
   font-size: 20px;
