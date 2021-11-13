@@ -46,7 +46,7 @@ function dataControl(data) {
             delay: 3000,
         });
     }
-    else { Error };
+    else { Error() };
 };
 
 function Error() {
