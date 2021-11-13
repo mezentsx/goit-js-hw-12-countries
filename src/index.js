@@ -25,16 +25,7 @@ function onInput(e) {
     if (searchQuery.length > 0) {
         fetchCountries(searchQuery)
             .then(dataControl)
-            .catch(error => {
-                defaultModules.set(PNotifyMobile, {});
-                alert({
-                    text: '!Information not found!',
-                    addClass: 'notify',
-                    maxOpen: 1,
-                    maxStrategy: 'close',
-                    delay: 3000,
-                });
-            });
+            .catch(Error);
     }
 };
 
@@ -55,5 +46,16 @@ function dataControl(data) {
         });
     }
 
+};
+
+function Error() {
+    defaultModules.set(PNotifyMobile, {});
+    alert({
+        text: '!Information not found!',
+        addClass: 'notify',
+        maxOpen: 1,
+        maxStrategy: 'close',
+        delay: 3000,
+    });
 }
 
