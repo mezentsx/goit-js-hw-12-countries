@@ -21,6 +21,7 @@ function onInput(e) {
     e.preventDefault();
     refs.cardContainer.innerHTML = "";
     const searchQuery = e.target.value;
+    console.log(searchQuery)
     
     if (searchQuery.length > 0) {
         fetchCountries(searchQuery)
