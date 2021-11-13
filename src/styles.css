@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 40px;
+  color: rgb(32, 39, 36);
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url('./images/body.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.js-container {
+  width: 1200px;
+  padding: 30px 15px;
+  margin: 0 auto;
+}
+
+.js-input {
+  display: block;
+  font-size: 27px;
+  outline: none;
+
+  border: 6px solid #424242;
+  border-radius: 20px;
+
+  height: 80px;
+  width: 100%;
+
+  margin-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.title {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.country-title {
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 70px;
+  color: black;
+}
+
+.country-card {
+  display: flex;
+  justify-content: center;
+}
+
+.country-list {
+  width: 400px;
+
+  padding: 0;
+  margin-right: 100px;
+  margin-top: 0;
+
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.country-list__item {
+  padding-bottom: 20px;
+}
+
+.country-list__span {
+  font-weight: normal;
+}
+
+.languages-list {
+  list-style-type: disc;
+  padding-top: 20px;
+}
+
+.notify {
+  background-image: repeating-linear-gradient(
+    -35deg,
+    rgb(187, 185, 185),
+    rgb(187, 185, 185) 40px,
+    rgb(139, 137, 137) 30px,
+    rgb(139, 137, 137) 80px
+  );
+  border-radius: 5px;
+  min-width: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
